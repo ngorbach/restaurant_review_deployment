@@ -5,7 +5,7 @@
 
 ## Getting Started
 
-1) Clone this repository executing 
+Clone this repository executing the cmd
 `git clone git@gitlab.propulsion-home.ch:full-stack/batch-11---february-2020/group-projects/sagittarius/deployment.git` 
 and navigate to the folder with `cd deployment/`.
 
