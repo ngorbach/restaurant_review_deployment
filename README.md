@@ -1,4 +1,5 @@
 <div align='center'>
+<img height="50" src=".logo/logo.png" style="align:center">
 <h1>Luna - Deployment</h1>
 </div>
 
