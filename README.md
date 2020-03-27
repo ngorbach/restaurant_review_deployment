@@ -9,6 +9,9 @@ Clone this repository using `git@gitlab.propulsion-home.ch:full-stack/batch-11--
 ## Authors
 
 **Jamil Essifi**
+
 **Karine Peltier**
+
 **Joy Anna Yoo**
+
 **Nico Gorbach**
