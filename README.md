@@ -1,5 +1,5 @@
 <div align='center'>
-<img height="100" src=".logo/logo.jpg" style="align:center">
+<img height="120" src=".logo/logo.jpg" style="align:center">
 <h1>Luna - Deployment</h1>
 </div>
 
