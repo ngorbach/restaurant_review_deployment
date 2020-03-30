@@ -10,7 +10,6 @@ services:
 
   nginx:
     image: nginx:latest
-    restart: always
     ports:
       - "80:80" # only http
       - "443:443" # https
@@ -23,14 +22,12 @@ services:
 
   backend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/backend:latest
-    restart: always
     env_file:
       - ./envs/dev.env
     command: 'sh /scripts/run.sh'
       
   frontend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
-    restart: always
     command: 'sh /scripts/run_frontend_cmds.sh'
     volumes:
       - frontend:/frontend/build
