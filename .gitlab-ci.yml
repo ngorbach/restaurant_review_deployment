@@ -6,13 +6,13 @@ stages:
 pull_backend_dockerimage:
   stage: pull_backend_dockerimage
   script:
-    - docker login -u ngorbach -p IctSiM12 registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/backend:latest
+    - docker registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/backend:latest
     - docker pull registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/backend:latest
 
 pull_frontend_dockerimage:
   stage: pull_frontend_dockerimage
   script:
-    - docker login -u ngorbach -p IctSiM12 registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
+    - docker registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
     - docker pull registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
 
 deploy:
