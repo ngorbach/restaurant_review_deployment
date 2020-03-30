@@ -27,7 +27,7 @@ services:
     env_file:
       - ./envs/dev.env
     command: 'sh /scripts/run.sh'
-      
+
   frontend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
     restart: always
@@ -36,6 +36,7 @@ services:
       - frontend:/frontend/build
       - media-files:/media-files
       - static-files:/static-files
+
 
 volumes:
   media-files:

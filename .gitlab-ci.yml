@@ -3,6 +3,9 @@ stages:
   - pull_frontend_dockerimage
   - deploy
 
+before_script:
+  - docker login -u "gitlab-ci-token" -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
 pull_backend_dockerimage:
   stage: pull_backend_dockerimage
   script:
