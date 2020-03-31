@@ -21,13 +21,14 @@ services:
       - media-files:/media-files
       - /etc/letsencrypt/:/etc/letsencrypt/
 
-
   backend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/backend:latest
     restart: always
     env_file:
       - ./envs/dev.env
     command: 'sh /scripts/run.sh'
+    volumes:
+      - static-files:/static-files
 
   frontend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
