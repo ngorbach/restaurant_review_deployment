@@ -19,6 +19,7 @@ services:
       - /nginx:/etc/nginx/conf.d
       - static-files:/static-files
       - media-files:/media-files
+      - /etc/letsencrypt/:/etc/letsencrypt/
 
 
   backend:
