@@ -46,4 +46,4 @@ volumes:
   static-files:
   postgres:
   frontend:
-  db.sqlite3
+  db.sqlite3:
