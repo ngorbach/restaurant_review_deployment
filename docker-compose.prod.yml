@@ -29,7 +29,6 @@ services:
     command: 'sh /scripts/run.sh'
     volumes:
       - static-files:/static-files
-      - db.sqlite3:/
 
   frontend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
@@ -46,4 +45,3 @@ volumes:
   static-files:
   postgres:
   frontend:
-  db.sqlite:
