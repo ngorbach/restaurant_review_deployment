@@ -1,12 +1,12 @@
 version:  '3'
 
 services:
-  postgres:
-    image: postgres:latest
-    env_file:
-      - ./envs/dev.env
-    volumes:
-      - postgres:/var/lib/postgresql/data
+  #postgres:
+  #  image: postgres:latest
+  #  env_file:
+  #    - ./envs/dev.env
+  #  volumes:
+  #    - postgres:/var/lib/postgresql/data
 
   nginx:
     image: nginx:latest
@@ -29,7 +29,7 @@ services:
     command: 'sh /scripts/run.sh'
     volumes:
       - static-files:/static-files
-      - db.sqlite3:/db.sqlite3
+      #- db.sqlite3:/db.sqlite3
 
   frontend:
     image: registry.gitlab.propulsion-home.ch/full-stack/batch-11-february-2020/group-projects/sagittarius/frontend:latest
@@ -46,4 +46,4 @@ volumes:
   static-files:
   postgres:
   frontend:
-  db.sqlite3:
+  #db.sqlite3:
